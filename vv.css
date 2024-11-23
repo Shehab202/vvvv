@@ -1,0 +1,42 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+ }
+body{    overflow: hidden;}
+.container{
+
+display: flex;
+z-index: 1;
+
+}
+
+
+.text{
+    position: absolute;
+    right: 178PX;
+    bottom: 40%;
+}
+.text .h1{
+    font-weight: 800;
+    font-size: 25px;
+    color: aqua;
+}
+
+
+.container::before{
+    content: '';
+    background-image: linear-gradient(to right, rgb(121, 16, 98), green);
+    width: 1026px;
+    height: 827px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(404deg);
+    left: 705px;
+    top: 10px;
+
+}
+
+
